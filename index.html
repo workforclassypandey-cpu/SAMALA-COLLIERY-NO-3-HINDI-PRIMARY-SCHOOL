@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SAMALA COLLIERY NO-03 HINDI PRIMARY SCHOOL</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: orange;
+            color: #222;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            background: linear-gradient(135deg, #e65100, #ff6d00, #ff9800);
+            color: white;
+            text-align: center;
+            padding: 60px 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 44px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        header p {
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 1.7;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        nav {
+            background: #222;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 20px 28px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #ff6d00;
+        }
+
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 600px;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.45),
+                    rgba(0,0,0,0.45)
+                ),
+                url("school1.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            padding: 30px;
+        }
+
+        .hero-content {
+            background: rgba(0,0,0,0.70);
+            color: white;
+
+            padding: 45px;
+            border-radius: 20px;
+
+            max-width: 1000px;
+
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+        }
+
+        .hero-content h2 {
+            font-size: 43px;
+            margin-bottom: 22px;
+        }
+
+        .hero-content p {
+            font-size: 21px;
+            line-height: 1.8;
+        }
+
+
+        /* ================= SECTIONS ================= */
+
+        section {
+            padding: 80px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            color: #8b2c00;
+            margin-bottom: 45px;
+            font-weight: bold;
+        }
+
+
+        /* ================= ABOUT ================= */
+
+        .about {
+            background: white;
+            margin: 35px;
+            border-radius: 25px;
+
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+        }
+
+        .about-text {
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about-text p {
+            font-size: 20px;
+            line-height: 2;
+            margin-bottom: 22px;
+        }
+
+
+        /* ================= INFORMATION ================= */
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(270px, 1fr));
+
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+
+            padding: 38px 25px;
+
+            border-radius: 20px;
+
+            text-align: center;
+
+            box-shadow: 0 7px 22px rgba(0,0,0,0.25);
+
+            border-top: 8px solid #ff6d00;
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            font-size: 25px;
+            color: #d94b00;
+            margin-bottom: 18px;
+        }
+
+        .card p {
+            font-size: 19px;
+            line-height: 1.7;
+        }
+
+
+        /* ================= CLASSES ================= */
+
+        .classes-section {
+            background: #fff3e0;
+
+            margin: 35px;
+
+            border-radius: 25px;
+
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .class-box {
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(190px, 1fr));
+
+            gap: 25px;
+
+            max-width: 950px;
+
+            margin: auto;
+        }
+
+        .class-item {
+            background: linear-gradient(
+                135deg,
+                #e65100,
+                #ff9800
+            );
+
+            color: white;
+
+            padding: 35px;
+
+            text-align: center;
+
+            border-radius: 18px;
+
+            font-size: 27px;
+
+            font-weight: bold;
+
+            box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+        }
+
+
+        /* ================= TIMING ================= */
+
+        .timing {
+            background: #222;
+
+            color: white;
+
+            text-align: center;
+
+            margin: 35px;
+
+            border-radius: 25px;
+
+            padding: 65px 20px;
+
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .timing h2 {
+            font-size: 38px;
+            color: #ff9800;
+            margin-bottom: 25px;
+        }
+
+        .timing p {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+
+        /* ================= GALLERY COMMON ================= */
+
+        .gallery-section {
+            background: white;
+
+            margin: 35px;
+
+            border-radius: 25px;
+
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+        }
+
+        .gallery {
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(300px, 1fr));
+
+            gap: 30px;
+        }
+
+        .gallery-item {
+            background: #f5f5f5;
+
+            padding: 12px;
+
+            border-radius: 18px;
+
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+
+            height: 380px;
+
+            object-fit: cover;
+
+            border-radius: 13px;
+
+            display: block;
+
+            transition: 0.4s;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.04);
+        }
+
+        .gallery-item h3 {
+            text-align: center;
+
+            margin-top: 16px;
+
+            margin-bottom: 8px;
+
+            color: #d94b00;
+
+            font-size: 21px;
+        }
+
+
+        /* ================= SCHOOL CAMPUS ================= */
+
+        .campus-section {
+            background: #fff3e0;
+
+            margin: 35px;
+
+            border-radius: 25px;
+
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+        }
+
+        .campus-description {
+            text-align: center;
+
+            max-width: 1000px;
+
+            margin: -15px auto 40px auto;
+
+            font-size: 20px;
+
+            line-height: 1.8;
+        }
+
+
+        /* ================= CONTACT ================= */
+
+        .contact {
+            background: white;
+
+            margin: 35px;
+
+            border-radius: 25px;
+
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+        }
+
+        .contact-box {
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(270px, 1fr));
+
+            gap: 30px;
+        }
+
+        .contact-card {
+            background: #fff3e0;
+
+            padding: 35px;
+
+            border-radius: 18px;
+
+            text-align: center;
+
+            border-left: 8px solid #ff6d00;
+        }
+
+        .contact-card h3 {
+            font-size: 24px;
+
+            color: #d94b00;
+
+            margin-bottom: 18px;
+        }
+
+        .contact-card p {
+            font-size: 19px;
+
+            line-height: 1.8;
+        }
+
+        .contact-card a {
+            color: #d94b00;
+
+            font-weight: bold;
+
+            text-decoration: none;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #171717;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 45px 20px;
+
+            margin-top: 35px;
+        }
+
+        footer h2 {
+            color: #ff9800;
+
+            margin-bottom: 18px;
+
+            font-size: 25px;
+        }
+
+        footer p {
+            font-size: 17px;
+
+            line-height: 1.8;
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 768px) {
+
+            header {
+                padding: 45px 15px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header p {
+                font-size: 17px;
+            }
+
+            nav a {
+                padding: 14px 13px;
+                font-size: 14px;
+            }
+
+            .hero {
+                min-height: 500px;
+            }
+
+            .hero-content {
+                padding: 30px 20px;
+            }
+
+            .hero-content h2 {
+                font-size: 28px;
+            }
+
+            .hero-content p {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 55px 4%;
+            }
+
+            .section-title {
+                font-size: 29px;
+            }
+
+            .about,
+            .classes-section,
+            .timing,
+            .gallery-section,
+            .campus-section,
+            .contact {
+                margin: 15px;
+            }
+
+            .gallery-item img {
+                height: 330px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- ================================================= -->
+<!-- HEADER -->
+<!-- ================================================= -->
+
+<header>
+
+    <h1>
+        SAMALA COLLIERY NO-03 HINDI PRIMARY SCHOOL
+    </h1>
+
+    <p>
+        ESTD - 1973 | E.C.L AIDED
+    </p>
+
+    <p>
+        AGENT OFFICE: KHOTTADHI - PANDAVESWAR - AREA - 713346
+    </p>
+
+</header>
+
+
+<!-- ================================================= -->
+<!-- NAVIGATION -->
+<!-- ================================================= -->
+
+<nav>
+
+    <a href="#home">HOME</a>
+
+    <a href="#about">ABOUT</a>
+
+    <a href="#school">SCHOOL INFORMATION</a>
+
+    <a href="#classes">CLASSES</a>
+
+    <a href="#events">EVENTS</a>
+
+    <a href="#campus">CAMPUS</a>
+
+    <a href="#contact">CONTACT</a>
+
+</nav>
+
+
+<!-- ================================================= -->
+<!-- HERO -->
+<!-- ================================================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <h2>
+            WELCOME TO SAMALA COLLIERY NO-03 HINDI PRIMARY SCHOOL
+        </h2>
+
+        <p>
+            A SCHOOL WITH A LONG HISTORY OF EDUCATION AND
+            COMMUNITY SERVICE, PROVIDING PRIMARY EDUCATION
+            TO YOUNG LEARNERS AND HELPING THEM BUILD A STRONG
+            FOUNDATION FOR THEIR FUTURE.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- ABOUT -->
+<!-- ================================================= -->
+
+<section id="about" class="about">
+
+    <h2 class="section-title">
+        ABOUT OUR SCHOOL
+    </h2>
+
+    <div class="about-text">
+
+        <p>
+            SAMALA COLLIERY NO-03 HINDI PRIMARY SCHOOL WAS
+            ESTABLISHED IN <strong>1973</strong>.
+        </p>
+
+        <p>
+            THE SCHOOL HAS BEEN SERVING THE LOCAL COMMUNITY
+            BY PROVIDING PRIMARY EDUCATION TO YOUNG CHILDREN.
+        </p>
+
+        <p>
+            THE SCHOOL PROVIDES EDUCATION FROM
+            <strong>CLASS 1 TO CLASS 4</strong>.
+        </p>
+
+        <p>
+            THE SCHOOL FOCUSES ON BASIC EDUCATION, DISCIPLINE,
+            GOOD HABITS, CONFIDENCE, KNOWLEDGE AND THE OVERALL
+            DEVELOPMENT OF CHILDREN.
+        </p>
+
+        <p>
+            THE SCHOOL IS AN <strong>E.C.L AIDED</strong>
+            PRIMARY SCHOOL LOCATED AT
+            <strong>SAMALA, WEST BENGAL - 713346</strong>.
+        </p>
+
+        <p>
+            OUR AIM IS TO PROVIDE CHILDREN WITH A POSITIVE,
+            SUPPORTIVE AND FRIENDLY LEARNING ENVIRONMENT.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- SCHOOL INFORMATION -->
+<!-- ================================================= -->
+
+<section id="school">
+
+    <h2 class="section-title">
+        SCHOOL INFORMATION
+    </h2>
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <h3>
+                ESTABLISHED
+            </h3>
+
+            <p>
+                1973
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                SCHOOL TYPE
+            </h3>
+
+            <p>
+                HINDI PRIMARY SCHOOL
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                CLASSES
+            </h3>
+
+            <p>
+                CLASS 1 TO CLASS 4
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                STATUS
+            </h3>
+
+            <p>
+                E.C.L AIDED
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                LOCATION
+            </h3>
+
+            <p>
+                SAMALA<br>
+                WEST BENGAL<br>
+                713346
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                AGENT OFFICE
+            </h3>
+
+            <p>
+                KHOTTADHI -<br>
+                PANDAVESWAR - AREA
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- CLASSES -->
+<!-- ================================================= -->
+
+<section id="classes" class="classes-section">
+
+    <h2 class="section-title">
+        CLASSES OFFERED
+    </h2>
+
+    <div class="class-box">
+
+        <div class="class-item">
+            CLASS 1
+        </div>
+
+        <div class="class-item">
+            CLASS 2
+        </div>
+
+        <div class="class-item">
+            CLASS 3
+        </div>
+
+        <div class="class-item">
+            CLASS 4
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- TIMING -->
+<!-- ================================================= -->
+
+<section class="timing">
+
+    <h2>
+        SCHOOL TIMING
+    </h2>
+
+    <p>
+        6:30 AM TO 10:30 AM
+    </p>
+
+    <br>
+
+    <p>
+        CLASSES 1 TO 4
+    </p>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- FIRST 4 PHOTOS -->
+<!-- SCHOOL EVENTS -->
+<!-- ================================================= -->
+
+<section id="events" class="gallery-section">
+
+    <h2 class="section-title">
+        SCHOOL EVENTS & ACTIVITIES
+    </h2>
+
+    <div class="gallery">
+
+
+        <div class="gallery-item">
+
+            <img src="school1.jpg" alt="SCHOOL EVENT">
+
+            <h3>
+                SCHOOL EVENT
+            </h3>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="school2.jpg" alt="SCHOOL EVENT">
+
+            <h3>
+                SCHOOL ACTIVITY
+            </h3>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="school3.jpg" alt="SCHOOL EVENT">
+
+            <h3>
+                SCHOOL PROGRAM
+            </h3>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="school4.jpg" alt="SCHOOL EVENT">
+
+            <h3>
+                SCHOOL CELEBRATION
+            </h3>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- NEW 4 PHOTOS -->
+<!-- SCHOOL CAMPUS -->
+<!-- ================================================= -->
+
+<section id="campus" class="campus-section">
+
+    <h2 class="section-title">
+        SCHOOL CAMPUS
+    </h2>
+
+    <p class="campus-description">
+
+        THESE PHOTOGRAPHS SHOW THE SCHOOL BUILDING,
+        SCHOOL ENTRANCE AND DIFFERENT VIEWS OF THE
+        SAMALA COLLIERY NO-03 HINDI PRIMARY SCHOOL CAMPUS.
+
+    </p>
+
+
+    <div class="gallery">
+
+
+        <div class="gallery-item">
+
+            <img src="school5.jpg" alt="SAMALA SCHOOL CAMPUS">
+
+            <h3>
+                SCHOOL CAMPUS
+            </h3>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="school6.jpg" alt="SAMALA SCHOOL BUILDING">
+
+            <h3>
+                SCHOOL BUILDING
+            </h3>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="school7.jpg" alt="SAMALA SCHOOL">
+
+            <h3>
+                SCHOOL ENTRANCE
+            </h3>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="school8.jpg" alt="SAMALA SCHOOL">
+
+            <h3>
+                SCHOOL PREMISES
+            </h3>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- CONTACT -->
+<!-- ================================================= -->
+
+<section id="contact" class="contact">
+
+    <h2 class="section-title">
+        CONTACT US
+    </h2>
+
+    <div class="contact-box">
+
+
+        <div class="contact-card">
+
+            <h3>
+                MOBILE NUMBER
+            </h3>
+
+            <p>
+
+                <a href="tel:8670729625">
+                    8670729625
+                </a>
+
+                <br>
+
+                /
+
+                <br>
+
+                <a href="tel:9933866604">
+                    9933866604
+                </a>
+
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h3>
+                LOCATION
+            </h3>
+
+            <p>
+                SAMALA<br>
+                WEST BENGAL<br>
+                PIN - 713346
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h3>
+                AGENT OFFICE
+            </h3>
+
+            <p>
+                KHOTTADHI -<br>
+                PANDAVESWAR - AREA
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h3>
+                SCHOOL TIMING
+            </h3>
+
+            <p>
+                6:30 AM<br>
+                TO<br>
+                10:30 AM
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- FOOTER -->
+<!-- ================================================= -->
+
+<footer>
+
+    <h2>
+        SAMALA COLLIERY NO-03 HINDI PRIMARY SCHOOL
+    </h2>
+
+    <p>
+        ESTD - 1973 | E.C.L AIDED
+    </p>
+
+    <p>
+        AGENT OFFICE: KHOTTADHI - PANDAVESWAR - AREA - 713346
+    </p>
+
+    <p>
+        SAMALA, WEST BENGAL - 713346
+    </p>
+
+    <br>
+
+    <p>
+        © 2026 SAMALA COLLIERY NO-03 HINDI PRIMARY SCHOOL
+    </p>
+
+</footer>
+
+
+</body>
+</html>
